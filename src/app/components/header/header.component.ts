@@ -1,25 +1,22 @@
 import { Component, signal } from '@angular/core';
+import { PrimaryButtonComponent } from "../primary-button/primary-button.component";
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [PrimaryButtonComponent],
   template: `
-    <p class="header">
-      {{title()}}
-    </p>
+  <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between">
+    <span>Angie's Store</span>
+    <app-primary-button label="Cart"/>
+    
+  </div>
+    
   `,
   styles: 
   `
-  .header{
-    background: grey;
-    color: black;
-    padding: 1rem
-    
-  }
- 
+
   `
 })
 export class HeaderComponent {
-  title = signal("Angular Ecommerce App")
 
 }

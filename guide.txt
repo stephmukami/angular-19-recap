@@ -9,3 +9,7 @@ Declare signal title = signal(initialValue)
 access value - title()
 change value - .set(newValue)
 - you can style individual components or do it globally in global scss
+- can add tailwind via the docs
+
+Events
+this was a reusable component `<app-primary-button label="Cart"/` that was getting info from a top level component and sending it to the parent component ( ie input and output)
