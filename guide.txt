@@ -1,6 +1,7 @@
 to start a new cli - ng new angular-ecom --inline-style --inline-template --skip-tests
 to start job do ng dev
-to create new component - ng generate component components/header
+to create new component - ng generate component components/header 
+quick commands: ng g c / ng g s / ng g p 
 you can reference components by their selectors which are best done by `app-componentname` and put it under template
 
 Sgnals API 
@@ -16,3 +17,5 @@ this was a reusable component `<app-primary-button label="Cart"/` that was getti
 Adding dynamic label values
 
 components are for reusable items and pages for broader layouts
+
+services expose information to the global app

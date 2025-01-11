@@ -1,15 +1,17 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, Inject, signal } from '@angular/core';
 import { PrimaryButtonComponent } from "../primary-button/primary-button.component";
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-header',
+  standalone: true,
   imports: [PrimaryButtonComponent],
   template: `
-  <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between items-center">
-    <span class="text-xl">Angie's Store</span>
-    <app-primary-button [label]= cart() (btnClicked)="showClicked()"/>
-    
-  </div>
+      <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between items-center">
+      <span class="text-xl">Angie's Store</span>
+      <app-primary-button [label]="'Cart (' + cartService.cart().length + ')'"></app-primary-button>
+    </div>
+
     
   `,
   styles: 
@@ -17,11 +19,8 @@ import { PrimaryButtonComponent } from "../primary-button/primary-button.compone
 
   `
 })
+
 export class HeaderComponent {
-  cart = signal("Cart");
-
-  showClicked(){
-    console.log("custom event handler")
-  }
-
+  // constructor(public cartService: CartService) {} or
+  cartService = inject(CartService);
 }

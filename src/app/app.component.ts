@@ -5,6 +5,7 @@ import { ProductsListComponent } from "./pages/products-list/products-list.compo
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet, HeaderComponent, ProductsListComponent],
   template: `
 
