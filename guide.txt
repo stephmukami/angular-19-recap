@@ -8,3 +8,4 @@ Sgnals API
 Declare signal title = signal(initialValue)
 access value - title()
 change value - .set(newValue)
+- you can style individual components or do it globally in global scss
