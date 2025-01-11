@@ -7,7 +7,7 @@ import { PrimaryButtonComponent } from "../primary-button/primary-button.compone
   template: `
   <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between">
     <span>Angie's Store</span>
-    <app-primary-button label="Cart"/>
+    <app-primary-button label="Cart" (btnClicked)="showClicked()"/>
     
   </div>
     
@@ -18,5 +18,9 @@ import { PrimaryButtonComponent } from "../primary-button/primary-button.compone
   `
 })
 export class HeaderComponent {
+
+  showClicked(){
+    console.log("custom event handler")
+  }
 
 }
