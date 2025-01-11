@@ -1,0 +1,4 @@
+to start a new cli - ng new angular-ecom --inline-style --inline-template --skip-tests
+ to start job do ng dev
+ to create new component - ng generate component components/header
+ you can reference components by their selectors which are best done by `app-componentname`
