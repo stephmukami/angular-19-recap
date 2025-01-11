@@ -13,3 +13,4 @@ change value - .set(newValue)
 
 Events
 this was a reusable component `<app-primary-button label="Cart"/` that was getting info from a top level component and sending it to the parent component ( ie input and output)
+Adding dynamic label values
