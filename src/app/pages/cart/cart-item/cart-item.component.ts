@@ -24,6 +24,7 @@ import { CartService } from '../../../services/cart.service';
   `,
   styles: ``
 })
+
 export class CartItemComponent {
 item = input.required<Product>()
 cartService = inject(CartService)

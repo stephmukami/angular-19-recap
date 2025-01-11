@@ -19,3 +19,4 @@ Adding dynamic label values
 components are for reusable items and pages for broader layouts
 
 services expose information to the global app
+computed state - derives state from calculated signals
